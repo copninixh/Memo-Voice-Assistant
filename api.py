@@ -18,11 +18,14 @@ def news_thai():
 
     query_news = response_news.json()['articles']
 
+    news_list = []
+
     for t in query_news:
-        news_detail = t["title"]
+        news_list.append(t["title"])
 
-    return news_detail
-
+    return news_list
+    
+       
 def covid19_th():
     response_covid = requests.get("https://coronavirus-19-api.herokuapp.com/countries/thailand")
     query_covid = response_covid.json()
@@ -34,7 +37,7 @@ def covid19_th():
     active = query_covid["active"]
     critical = query_covid["critical"]
 
-    allreport = "สถานการณ์โควิดของประเทศไทยจำนวนติดเชื้อสะสมวันนี้ {} คน จำนวนผู้เสียชีวิต {} คน จำนวนผู้รักษาหาย {} คน จำนวนผู้รักษาอยู่ในโรงพยาบาล {} คน จาก จำนวนติดเชื้อสะสม {} คน หายแล้วทั้งหมด {} คน และตายทั้งหมด {} คน ".format(todaycase,todydeath,critical,active,allcase,recovered,alldeath)
+    allreport = "สถานการณ์โควิดของประเทศไทยจำนวนติดเชื้อสะสมวันนี้อยู่ที่ {} คน จำนวนผู้เสียชีวิต {} คน จำนวนผู้รักษาหาย {} คน จำนวนผู้รักษาอยู่ในโรงพยาบาล {} คน จาก จำนวนติดเชื้อสะสม {} คน หายแล้วทั้งหมด {} คน และตายทั้งหมด {} คน ".format(todaycase,todydeath,critical,active,allcase,recovered,alldeath)
 
     return allreport
 
@@ -56,6 +59,7 @@ def weather():
 
     return report_weather
     
+print(news_thai())
 
     
 
