@@ -1,4 +1,4 @@
-# Memo Voice Assistant Version beta II 👾⚒️
+# MEMO Voice Assistant Version beta II 👾⚒️
 MEMO Part voice assistant version beta II
 ## List update and change 🔨
 ### About patient 🔥
