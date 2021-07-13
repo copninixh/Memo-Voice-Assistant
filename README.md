@@ -1,6 +1,8 @@
 # MEMO Voice Assistant Version beta II 👾⚒️
-MEMO Part voice assistant version beta II
+MEMO Part voice assistant version beta II 
 ## List update and change 🔨
+### Thai Speech Emotion Recognition (SER)
+- Coming soon ⚡
 ### About patient 🔥
 - Profile
 - Activition notification
@@ -12,3 +14,4 @@ MEMO Part voice assistant version beta II
 - Daily News
 - Covid 19 TH Situation report
 - Weather
+
