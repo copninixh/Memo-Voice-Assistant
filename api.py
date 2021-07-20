@@ -2,8 +2,10 @@
 import requests
 import json
 import datetime, pytz
+from datetime import datetime
 
 tz = pytz.timezone('Asia/Bangkok')
+now = datetime.now(tz)
 
 def thai_time():
     now = datetime.datetime.now(tz)
@@ -58,8 +60,24 @@ def weather():
     report_weather = "สภาพอากาศประจำ {} ขณะนี้อุณหภูมิเฉลี่ยอยูที่ {} องศาเซลเซียส อุณหภูมิต่ำสุด {} องศาเซลเซียส อุณหภูมิสูงสุด {} องศาเซลเซียส แรงลมที่ {} เมตรต่อวินาที โดยที่สภาพอากาศภาพรวมวันนี้คือ {}".format(thai_time(),weather_mean,weather_min,weather_max,weather_wind,weather_description)
 
     return report_weather
+
+def time_notification():
+    time_now  = now.strftime("%H:%M")
+    time_check = "19:54"
+    if(time_now == time_check):
+        noti = "yes"
+    else:
+        noti = "no"
+
+    return noti
+
+print(time_notification())
     
-print(news_thai())
+
+
+
+    
+    
 
     
 
