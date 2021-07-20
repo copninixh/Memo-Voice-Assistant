@@ -1,3 +1,17 @@
-# Memo-Voice-Assistant
-Beta Version 1
-for MEMO helper and care system (NSC 2021) YRC
+# MEMO Voice Assistant Version beta II 👾⚒️
+MEMO Part voice assistant version beta II 
+## List update and change 🔨
+### Thai Speech Emotion Recognition (SER)
+- Coming soon ⚡
+### About patient 🔥
+- Profile
+- Activition notification
+- Medicine time notification
+### Entertainment Part 🔥
+- Youtube Playlist
+- Music from local
+### News and activity 🔥
+- Daily News
+- Covid 19 TH Situation report
+- Weather
+
